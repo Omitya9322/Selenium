@@ -22,6 +22,8 @@ public class RegisterTestCase {
 	@Test(groups = "System", dataProvider = "RegisterTestCase")
 	public void registerAndValidate(String firstname, String lastname, String email, String password, String confirmpassword) {
 		
+		
+		
 		UtilityMathods d=new UtilityMathods();
 		
 		//Step 1-To launch the browser
@@ -31,7 +33,7 @@ public class RegisterTestCase {
 		driver.get("https://demowebshop.tricentis.com/");
 		
 		//Step 2-To validate demo web shop page is displayed or not
-		
+		driver.manage().window().minimize();
 		Assert.assertEquals(driver.getTitle(), "Demo Web Shop","Demo web shop page is not displayed");
 		Reporter.log("Demo Web Shop is displayed", true);
 		
