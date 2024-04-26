@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="org.automation.test_scripts.Validation02Test"/>
+      <class name="org.automation.test_scripts.AddToWishlistTestcase"/>
+      <class name="org.automation.test_scripts.EmailWishListToFriend"/>
+      <class name="org.automation.test_scripts.ChangePasswordTestCase"/>
+      <class name="org.automation.test_scripts.RemoveFromCartTestCase"/>
+      <class name="org.automation.test_scripts.RegisterTestCase"/>
+      <class name="org.automation.test_scripts.Wishlist03Test"/>
+      <class name="org.automation.test_scripts.AddToCartTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
